@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Ages {
+public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+        //обработка на входни данни
+
+        int age = Integer.parseInt(scanner.nextLine());
+
+        //обработка на данните
+
+        if (age >= 0 && age <= 2) { //използваме if else конструкция, като използваме и "Logical AND"
+            System.out.println("baby");
+        } else if (age >= 3 && age <= 13) {
+            //принтиране на резултат
+            System.out.println("child");
+        } else if (age >= 14 && age <= 19) {
+            System.out.println("teenager");
+        } else if (age >= 20 && age <= 65) {
+            System.out.println("adult");
+        } else if (age >= 66) {
+            System.out.println("elder");
+        } else {
+            System.out.println("out of bounds");
+        }
+    }
+}
